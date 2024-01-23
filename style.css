@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+:root {
+  --Primary-LCyan: hsl(193, 38%, 86%);
+  --Primary-NGreen: hsl(150, 100%, 66%);
+  --Neutral-GBlue: hsl(217, 19%, 38%);
+  --Neutral-DGBlue: hsl(217, 19%, 24%);
+  --Neutral-DarkBlue: hsl(218, 23%, 16%); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: var(--Neutral-DarkBlue);
+  color: var(--Primary-LCyan);
+  font-family: 'Manrope', sans-serif;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh; }
+  body .card {
+    background-color: var(--Neutral-DGBlue);
+    width: 20em;
+    height: auto;
+    padding: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative; }
+    body .card .advice-num {
+      color: var(--Primary-NGreen);
+      font-size: 18px;
+      padding-bottom: 1em;
+      letter-spacing: 5px;
+      text-transform: uppercase; }
+    body .card .advice-para {
+      text-align: center;
+      padding-bottom: 1em; }
+    body .card .pattern-divider {
+      color: var(--Primary-NGreen);
+      padding-bottom: 1em; }
+    body .card .icon-dice {
+      position: absolute;
+      background-image: url("images/icon-dice.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+      width: 2em;
+      height: 2em;
+      background-color: var(--Primary-NGreen);
+      border-radius: 50px;
+      bottom: -1em; }
+  body .attribution {
+    position: absolute;
+    bottom: 1em; }
+
+@media (max-width: 375px) {
+  body .card {
+    width: 12em; }
+    body .card .pattern-divider {
+      width: 10em; } }
+
+/*# sourceMappingURL=style.css.map */

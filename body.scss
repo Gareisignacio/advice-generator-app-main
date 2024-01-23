@@ -1,0 +1,54 @@
+body{
+   background-color: var(--Neutral-DarkBlue);
+   color: var(--Primary-LCyan);
+   font-family: 'Manrope', sans-serif;
+   font-size: 28px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 100vh;
+   .card{
+      background-color: var(--Neutral-DGBlue);
+      width: 20em;
+      height: auto;
+      padding: 1.5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 10px;
+      position: relative;
+      .advice-num{
+         color: var(--Primary-NGreen);
+         font-size: 18px;
+         padding-bottom: 1em;
+         letter-spacing: 5px;
+         text-transform: uppercase;
+      }
+      .advice-para{
+         text-align: center;
+         padding-bottom: 1em;
+      }
+      .pattern-divider{
+         color: var(--Primary-NGreen);
+         padding-bottom: 1em;
+      }
+      .icon-dice{
+         position: absolute;
+         background-image:  url("images/icon-dice.svg");
+         background-repeat: no-repeat;
+         background-position: center;
+         cursor: pointer;
+         width: 2em;
+         height: 2em;
+         background-color: var(--Primary-NGreen);
+         border-radius: 50px;
+         bottom: -1em;
+      }
+   }
+   .attribution{
+      position: absolute;
+      bottom: 1em;
+   }
+}
